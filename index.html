@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDR | Institute of Digital Risk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="assets.js"></script>
+</head>
+<body>
+
+    <header class="main-header">
+    <nav class="navbar">
+        <div class="logo">
+            <img id="main-logo" src="assets/INSTITUTE OF DIGITAL RISK.png" alt="IDR Logo">
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#community">Community</a></li>
+        </ul>
+
+        <div class="nav-cta">
+            <a href="#contact" class="btn-register">Register</a>
+        </div>
+    </nav>
+</header>
+
+    <main class="parent">
+
+       <section id="hero" class="div2 hero">
+    <div class="hero-content">
+        <h1>Advancing the Future of <br><span class="white-text">Digital Risk</span></h1>
+        
+        <p>Training and deploying digital risk practitioners through academic <br> 
+           collaboration and industry practice.</p>
+
+        <div class="hero-btns">
+            <a href="#services" class="btn-orange">Explore Programs</a>
+            <a href="#contact" class="btn-outline">Hire Talent</a>
+        </div>
+    </div>
+</section>
+
+        <aside id="contact" class="div3 contact-sidebar">
+            <h3>Register Your Interest</h3>
+            <form class="sidebar-form">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="Your Full Name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Your Email Address" required>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea placeholder="Tell us about your interest..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </aside>
+
+        <section id="about" class="div4 about-section">
+            <h2>About IDR</h2>
+            <p>The Institute of Digital Risk is an industry-led training and deployment institute focused on digital, cyber, and technology risk roles in regulated, high-consequence environments.</p>
+            <p>We emphasize the critical link between academic insight—through our UK university partnerships—and real-world projects to prepare the next generation of practitioners.</p>
+        </section>
+
+        <div id="services" class="div5 pillar">
+            <div class="pillar-content">
+                <h3>Academy</h3>
+                <p>Industry-led training and bootcamps for students and professionals looking to enter the digital risk space.</p>
+            </div>
+        </div>
+
+        <div class="div6 pillar">
+            <div class="pillar-content">
+                <h3>Innovation & Incubation</h3>
+                <p>Developing intellectual property, future risk models, and robust AI governance frameworks.</p>
+            </div>
+        </div>
+
+        <div class="div7 pillar">
+            <div class="pillar-content">
+                <h3>Advisory Services</h3>
+                <p>Helping organizations implement industry-standard frameworks like NIST, ISO 27001, and NIS2.</p>
+            </div>
+        </div>
+
+        <div class="div8 photo-box">
+            <img id="side-icon" src="assets/logo.png" alt="IDR Symbol">
+        </div>
+
+        <section id="community" class="div9 community-section">
+            <h2>Who We Serve</h2>
+            <p>Our community consists of students, early-career professionals, and practitioners in sectors like financial services and critical infrastructure seeking to upskill in digital and cyber risk.</p>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 Institute of Digital Risk. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            if (typeof IDR_ASSETS !== 'undefined') {
+                document.getElementById('main-logo').src = IDR_ASSETS.logoFull;
+                document.getElementById('side-icon').src = IDR_ASSETS.logoIcon;
+            } else {
+                console.error("assets.js not found or IDR_ASSETS is not defined.");
+            }
+        });
+    </script>
+
+</body>
+</html>
