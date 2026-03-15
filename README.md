@@ -4,7 +4,7 @@
 A high-performance, responsive web platform designed for the **Institute of Digital Risk**. This project showcases a modern approach to bridging academic theory with technical cyber-risk expertise through an intuitive and professional user interface.
 
 ## 🚀 Live Demo
-[**View the Live Project Here**](https://institute-digital-risk.vercel.app/)
+https://institute-digital-risk.vercel.app/
 
 ---
 
